@@ -1,0 +1,6 @@
+{
+	"directory" : "src/bower_components",
+	"scripts": {
+		"postinstall": "../node_modules/.bin/bower-requirejs -c src/data-main.js -e requirejs"
+	}
+}
