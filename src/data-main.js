@@ -5,17 +5,19 @@ requirejs.config({
 	},
 	shim: {
 		angular: {
-			exports: 'angular'
+			exports: "angular"
 		},
 		"angular-ui-router": {
 			deps: [
-				'angular'
+				"angular"
 			]
 		}
 	},
-	packages: []
+	packages: [
+
+	]
 });
 
-require(['../src/myApp/app/app'], function(app){
+require(['myApp/app/app', 'myApp/templates'], function(app){
 	app.run(document.getElementById('myApp'));
 });
